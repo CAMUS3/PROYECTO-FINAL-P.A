@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-5">
+    <h1>Formulario de Predicción</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.sepal_length.label }} {{ form.sepal_length(class="form-control") }} <br>
+        {{ form.sepal_width.label }} {{ form.sepal_width(class="form-control") }} <br>
+        {{ form.petal_length.label }} {{ form.petal_length(class="form-control") }} <br>
+        {{ form.petal_width.label }} {{ form.petal_width(class="form-control") }} <br>
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+</body>
+</html>
